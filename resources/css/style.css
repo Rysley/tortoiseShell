@@ -4,25 +4,49 @@ html {
 }
 
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   line-height: 1.4;
 }
 
 header {
-  background-color: black;
+  display: flex;
+  justify-content: center;
   color: white;
 }
 
-.container {
-  background-color: cadetblue;
-  max-width: 960px;
+nav ul{
+  display: flex;
+  list-style: none;
+  padding-right: 1rem;
 }
 
-header .container {
-  display: flex;
-  align-items: center;
+nav li {
+  padding: 1rem;
 }
+
+.logo{
+display: flex;
+align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  width: 960px;
+  margin-top: 1rem;
+}
+
+/*header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
 
 .container img {
+  padding-left: 2rem;
+  padding-right: 1rem;
   height: 1.5rem;
 }
