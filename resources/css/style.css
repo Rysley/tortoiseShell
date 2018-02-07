@@ -70,3 +70,71 @@ align-items: center;
   display: flex;
   justify-content: flex-end;
 }
+
+/* PICTOGRAM STYLES */
+
+.icons {
+  display: block;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pictogram {
+  display: flex;
+  background-color: white;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  text-align: center;
+}
+
+.tall img {
+  width: 3.5rem;
+}
+
+.long img {
+  width: 5rem;
+}
+
+  /* INFOBOX STYLES */
+
+.info {
+  display: flex;
+  justify-content: center;
+  /*background-color: pink;*/
+}
+
+.infobox {
+  display: block;
+  width: 30%;
+  padding: 0 5%;
+}
+
+.infobox h3 {
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  max-width: 10rem;
+}
+
+/* FOOTER STYLES */
+
+.footer{
+  background: azure;
+  display: flex;
+  align-items: center;
+  margin: auto auto;
+  margin-top: 5rem;
+}
+
+.footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
