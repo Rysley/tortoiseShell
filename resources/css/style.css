@@ -105,12 +105,13 @@ align-items: center;
 .info {
   display: flex;
   justify-content: center;
+  margin: auto auto;
   /*background-color: pink;*/
 }
 
 .infobox {
   display: block;
-  width: 30%;
+  width: 35%;
   padding: 0 5%;
 }
 
