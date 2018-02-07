@@ -37,6 +37,11 @@ nav li {
   padding: 1rem;
 }
 
+.mobile {
+  display: none;
+}
+
+
 .logo {
 display: flex;
 align-items: center;
@@ -49,6 +54,65 @@ align-items: center;
   background-color: cadetblue;
   margin-top: 1rem;
   margin-bottom: 10rem;
+}
+
+@media only screen and (max-width: 960px){
+
+  header {
+    background-position-x: 30%
+  }
+
+  .header {
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .headline .motto {
+    background-color: white;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 640px){
+
+.mobile {
+  display: block;
+}
+
+.tablet {
+  display: none;
+}
+
+header {
+  height: 17rem;
+  background-position-x: 20%;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 9rem;
+}
+
+.headline .motto {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem auto;
+  width: 100%;
+  margin: 0;
+}
+
+
 }
 
 .header img {
@@ -80,6 +144,27 @@ align-items: center;
   justify-content: center;
 }
 
+@media only screen and (max-width: 640px){
+
+.icons {
+  flex-direction: column;
+  align-items: center;
+  margin: 2.2rem 0;
+}
+
+.icons .pictogram {
+  padding: 1.54rem;
+  font-size: 0.77rem;
+  margin: 0;
+  height: auto;
+}
+
+.icons img {
+  padding-bottom: 1.54rem;
+}
+
+}
+
 .pictogram {
   display: flex;
   background-color: white;
@@ -109,20 +194,46 @@ align-items: center;
   /*background-color: pink;*/
 }
 
+
+@media only screen and (max-width: 640px){
+
+.info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.info .infobox {
+  width: 100%
+}
+
+.info .infobox h3 {
+  width: auto;
+  text-align: center;
+}
+
+.info .infobox p {
+  margin: 5%;
+  margin-bottom: 4rem;
+}
+
+}
+
 .infobox {
   display: block;
   width: 35%;
   padding: 0 5%;
+  min-width: 10rem;
 }
 
 .infobox h3 {
+  color: white;
   font-size: 1rem;
   background-color: cadetblue;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1.25rem;
   margin-bottom: 1rem;
-  max-width: 10rem;
+  width: 10rem;
 }
 
 /* FOOTER STYLES */
@@ -133,6 +244,18 @@ align-items: center;
   align-items: center;
   margin: auto auto;
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 650px){
+
+.footer {
+  margin-top: 0;
+}
+
+.footer{
+  justify-content: center;
+}
+
 }
 
 .footer img {
